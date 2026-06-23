@@ -1,9 +1,5 @@
 <?php
-$host = '192.168.1.16';
-$user = 'd4cskt';
-$pass = 'Tung';
-$dbname = 'd4cskt';
-$charset = 'utf8mb4';
+
 
 try {
     $pdo = new PDO(
@@ -22,7 +18,7 @@ try {
 
 session_start();
 
-define('ADMIN_PASSWORD', 'Tung');
+define('ADMIN_PASSWORD', '');
 define('BASE_URL', 'http://localhost/admin-dashboard/');
 
 function isAdminLoggedIn() {
